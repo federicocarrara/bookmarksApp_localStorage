@@ -1,0 +1,33 @@
+body {
+  background-color: #F8F8FF;
+}
+
+#bookmarksList {
+  margin-top: 0;
+}
+.list-group {
+  width: 60%;
+  margin: auto;
+  margin-top: 80px;
+}
+
+.list-group-item {
+  font-size: 20px;
+}
+
+h4 {
+  display: inline-block;
+  margin-top: 7px;
+}
+
+li button {
+  float: right;
+}
+
+li a {
+  float: right;
+}
+
+.btn-outline-primary {
+  margin-right: 4px;
+}

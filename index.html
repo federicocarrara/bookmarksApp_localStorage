@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Bookmarks</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body onload="fetchBookmarks()">
+    <div class="container">
+      <form id="form">
+        <div class="form-group">
+          <h1 class="text-center">Save New Bookmark</h1>
+          <input id="bookmarkUrl" type="url" class="form-control" placeholder='Url (https://www.example.com)'>
+        </div>
+        <div class="form-group">
+          <input id="bookmarkName" maxlength="30" type="text" class="form-control" placeholder="Name">
+        </div>
+        <input type="submit" class="form-control btn-outline-primary" value="Save">
+      </form>
+      <ul class="list-group">
+        <li class="list-group-item">
+          <h4>Google</h4>
+          <a href= "http://www.google.com" class="btn btn-outline-primary">View</a>
+        </li>
+        <li class="list-group-item">
+          <h4>Slack</h4>
+          <a href= "http://www.slack.com" class="btn btn-outline-primary">View</a>
+        </li>
+      </ul>
+      <ul id="bookmarksList" class="list-group">
+      </ul>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
